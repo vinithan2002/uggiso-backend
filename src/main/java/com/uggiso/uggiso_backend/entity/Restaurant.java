@@ -3,7 +3,6 @@ package com.uggiso.uggiso_backend.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
-import java.awt.*;
 import java.time.LocalDateTime;
 import java.util.List;
 
