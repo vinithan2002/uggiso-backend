@@ -16,7 +16,15 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import com.uggiso.uggiso_backend.dto.request.LoginRequest;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
+@CrossOrigin(
+    originPatterns = {
+        "https://*.vercel.app",
+        "http://localhost:5173"
+    },
+    allowCredentials = "true"
+)
 @RestController
 public class AuthController {
     private final AuthenticationManager authenticationManager;
